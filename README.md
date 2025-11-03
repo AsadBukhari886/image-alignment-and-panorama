@@ -63,11 +63,8 @@ stitcher = cv2.Stitcher_create()
 status, result = stitcher.stitch(images)
 
 if status == 0:
+    plt.figure(figsize=[30, 10])
     plt.imshow(result)
-    plt.axis("off")
-    plt.title("Panorama Result")
-    plt.show()
-
 ```
 ## Algorithms Used
 
